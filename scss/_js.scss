@@ -1,0 +1,73 @@
+@import 'colors';
+
+.list {
+    padding: 20px;
+
+    @media (min-width:700px) {
+        background-color: $secondary;
+    }
+
+    &__container {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: $primary;
+        color: $wh;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+    }
+}
+
+
+#task-input {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+
+    &:focus {
+        box-shadow: 5px 5px 10px $wh;
+    }
+}
+
+#add-task-btn {
+    padding: 15px 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.475rem;
+    background-color: $secondary;
+    cursor: pointer;
+
+    &:active {
+        opacity: 60%;
+        transition: opacity 2s;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 0.375rem;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: $secondary;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.375rem;
+}

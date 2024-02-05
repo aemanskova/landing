@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK2 Manskova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="header__container">
+            <a href="#" aria-label="Go to the main page"><img class="header__logo" src="../img/logo.svg" alt="logo"></a>
+
+            <ul class="header__nav">
+                <li class="header__link"><a href="#hero">Hero</a></li>
+                <li class="header__link"><a href="#tab">Tabs</a></li>
+                <li class="header__link"> <a href="#list_js">List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__container">
+                <div class="hero__info">
+                    <h1>
+                        Backend Developer
+                    </h1>
+                    <p>A backend developer (aka "backender") is an IT specialist who writes server code and APIs, works
+                        with
+                        databases, and creates libraries. He is in the "shadow", as his work is difficult to notice
+                        immediately.</p>
+                    <button class="hero__button">Let's go!</button>
+                </div>
+                <img class="hero__img" src="./img/hero.jpg" alt="Backend-programmist with a cup of coffee">
+            </div>
+
+        </section>
+        <section id="tab">
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">How does the Internet Work?</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">What is HTTP?</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label for="tab-btn-3">How browsers work</label>
+
+                <div class="tabs__content" id="content-1">
+                    <p>As a developer, it is important to have a solid understanding of what the internet is and how it
+                        works. It is the foundation upon which most modern software applications are built. In order to
+                        build effective, secure, and scalable applications and services, you need to have a solid
+                        understanding of how the internet works and how to leverage its power and connectivity.
+
+                        In this article we will cover the basics of internet including what it is how it works, some
+                        basic
+                        concepts, terminology and some common protocols that are used to build applications and services
+                        on
+                        the internet.</p>
+                    <img class="tabs__img" src="../img/internet.jpg" alt="Red internet flag">
+                </div>
+                <div class="tabs__content" id="content-2">
+                    <p>The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to
+                        load
+                        webpages using hypertext links. HTTP is an application layer protocol designed to transfer
+                        information between networked devices and runs on top of other layers of the network protocol
+                        stack.
+                        A typical flow over HTTP involves a client machine making a request to a server, which then
+                        sends a
+                        response message.</p>
+                    <img class="tabs__img" src="../img/laptop.jpg" alt="Programmer codes">
+                </div>
+                <div class="tabs__content" id="content-3">
+                    <p>There are five major browsers used on desktop today: Chrome, Internet Explorer, Firefox, Safari
+                        and
+                        Opera. On mobile, the main browsers are Android Browser, iPhone, Opera Mini and Opera Mobile, UC
+                        Browser, the Nokia S40/S60 browsers and Chrome, all of which, except for the Opera browsers, are
+                        based on WebKit. I will give examples from the open source browsers Firefox and Chrome, and
+                        Safari
+                        (which is partly open source). According to StatCounter statistics (as of June 2013) Chrome,
+                        Firefox
+                        and Safari make up around 71% of global desktop browser usage. On mobile, Android Browser,
+                        iPhone
+                        and Chrome constitute around 54% of usage.</p>
+                    <img class="tabs__img" src="../img/browser.jpg" alt="Photo of browser">
+                </div>
+            </div>
+        </section>
+        <section class="list" id="list_js">
+            <div class="list__container">
+                <div class="list__input">
+                    <label class="list__header" for="task-input">Add task:</label>
+                    <input type="text" id="task-input">
+                </div>
+                <button id="add-task-btn">Add</button>
+                <h2>All tasks:</h2>
+                <p>Amount of tasks: <span id="task-count">0</span></p>
+                <ul id="task-list"></ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__header">Manskova Alena Evgenievna 221-321</p>
+        <p class="footer__date">28.04.2023</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
